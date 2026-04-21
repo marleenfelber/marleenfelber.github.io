@@ -130,6 +130,8 @@ h4 {
     font-size: 50px;
     transform: scale(1);
     transition: transform 0.25s ease;
+
+    z-index: 100;
 }
 
 .buttonToTop:hover {
@@ -624,9 +626,29 @@ p a {
         font-size: 65px;
     }
 
+    h2 {
+        font-size: 45px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    footer h2 {
+        font-size: 25px;
+    }
+
+    .body-text {
+        font-size: 19px;
+    }
+
     .intro-flex-container p {
         font-style: unset;
         margin-top: 15px;
+    }
+
+    .about-flex-container .body-text{
+        margin-top: 40px;
     }
 
     .about-flex-container .note-flex-container {
@@ -634,8 +656,20 @@ p a {
     }
 
     .overview-flex-container {
-        padding-top: 25px;
+        padding-top: 30px;
         gap: 15px;
+    }
+
+    .cats-flex-container {
+        justify-content: start;
+    }
+
+    .maldives-flex-container img {
+        padding-bottom: 25px;
+    }
+
+    .maldives-flex-container .body-text {
+        padding-bottom: 25px;
     }
 
     .photography-flex-container {
@@ -649,11 +683,11 @@ p a {
 
 
 
-
+    
     /* Changes flex-direction */
     .nav-flex-container {
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 35px;
         padding-bottom: 20px;
     }
 
@@ -665,6 +699,8 @@ p a {
     .nav-flex-container ul li a {
         font-size: 20px;
     }
+
+
 
 
     /* Unsets maximum width and may apply new width */
@@ -686,6 +722,7 @@ p a {
         max-width: unset;
         width: 80%;
     }
+
 
 
 
