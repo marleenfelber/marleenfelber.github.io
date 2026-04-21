@@ -1,0 +1,754 @@
+body {
+    margin: unset;
+    background-color: #FAF7F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    /* Default image size */
+    max-width: 40%;
+    height: auto;
+}
+
+video {
+    /* Default video size */
+    max-width: 40%;
+    height: auto;
+}
+
+
+
+
+/* Text and section styles */
+.width {
+    /* Sets maximum width and centers all content */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.section {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.tag {
+    /* Tag: "— chapter 01 · about" etc. */
+    color: #a7455d;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: unset;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+h2 {
+    /* Section titles */
+    color: #2F020C;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
+    text-transform: uppercase;
+
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+h3 {
+    /* Section introduction */
+    color: #2F020C;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+
+    padding-bottom: 60px;
+
+    text-align: justify;
+}
+
+h4 {
+    /* Subheading: "I'm Marleen Felber." etc. */
+    color: #2F020C;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+
+    margin: 0px;
+}
+
+.subtitle {
+    /* Cursive phrases: "hello there," etc. */
+    color: #751B30;
+    font-family: 'Segoe Script', 'Brush Script MT', 'Snell Roundhand', cursive;
+    font-size: 25px;
+    letter-spacing: -0.01em;
+    font-weight: bold;
+    text-transform: lowercase;
+
+    margin-top: 0;
+}
+
+.body-text {
+    /* Body text */
+    color: #2F020C;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+
+    text-align: justify;
+}
+
+.body-text a {
+    /* Links in a body text */
+    color: #751B30;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.body-text a:hover {
+    /* Link color changes when hovering over it */
+    color: #B8698E;
+}
+
+
+
+
+/* Button to get to top */
+.buttonToTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color: #420D19;
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    transform: scale(1);
+    transition: transform 0.25s ease;
+
+    z-index: 100;
+}
+
+.buttonToTop:hover {
+    /* Button size changes when hovering over it */
+    transform: scale(1.2);
+}
+
+
+
+
+/* Navigation bar */
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+
+    box-shadow: 0px 1px #e6d6d9;
+
+    background-color: #faf7f7ec;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.nav-menu-links {
+    /* Flexbox for nav links: about, my cats, travel, photography */
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+    align-items: center;
+    gap: 2.5px;
+}
+
+.logo {
+    /* Logo in the nav bar: "marleen felber." */
+    color: #420D19;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.nav-flex-container {
+    /* Flexbox for logo and nav links */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-flex-container ul li a {
+    /* Style of nav links */
+    color: #420D19;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+}
+
+.nav-flex-container ul li a:hover {
+    /* Link color and background color change when hovering over it */
+    color: #F6BAD6;
+    background-color: #420D19;
+
+    border-radius: 100px;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+
+
+
+/* Introduction section */
+.intro-flex-container {
+    /* Flexbox for introduction */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+
+    border-color: #E6D6D9;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    background: linear-gradient(to bottom, #FAF7F7, #F1D3DF);
+}
+
+.intro-flex-container .tag {
+    font-size: 16px;
+    font-style: unset;
+
+    margin-bottom: 45px;
+}
+
+h1 {
+    /* Title */
+    color: #2F020C;
+    font-family: 'Segoe Script', 'Brush Script MT', 'Snell Roundhand', cursive;
+    font-size: 80px;
+    letter-spacing: -0.01em;
+    line-height: 1.0;
+    text-transform: lowercase;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-flex-container>p {
+    /* Divider symbols */
+    color: #a7455d;
+    font-size: 20px;
+    font-style: italic;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.intro-flex-container>.phrases {
+    /* Phrases below divider */
+    color: #2F020C;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+
+    margin-top: 10px;
+}
+
+
+
+
+/* About section */
+.about-flex-container {
+    /* Flexbox for image and text */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.about-flex-container div {
+    /* Sets maximum width for text column */
+    max-width: 55%;
+}
+
+.about-flex-container div .subtitle {
+    /* Removes space below - "hello there," */
+    margin-bottom: 0px;
+}
+
+.about-flex-container .note-flex-container {
+        margin-top: 30px;
+    }
+
+.portrait {
+    /* Centers and resizes image */
+    object-fit: cover;
+    width: 40%;
+
+    display: block;
+    margin: 0px auto;
+}
+
+
+
+
+/* About and cat section */
+.note-flex-container {
+    /* Flexbox for note-like divs with dark left border */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-color: #F8E0EA;
+    border-color: #2F020C;
+    border-width: 0px 0px 0px 3px;
+    border-style: solid;
+
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.note-flex-container .tag {
+    /* Note heading */
+    color: #a7455d;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: unset;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+    margin-bottom: -0.5px;
+}
+
+.note-flex-container p {
+    /* Note text */
+    color: #5E2638;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+
+    text-align: justify;
+
+    margin-bottom: 30px;
+}
+
+
+
+
+/* About and travel section */
+.overview-flex-container {
+    /* Flexbox for information */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 55px;
+
+    border-color: #E6D6D9;
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+}
+
+.overview-flex-container .tag {
+    /* Information tag */
+    color: #a7455d;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: unset;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    margin-bottom: -2px;
+}
+
+.overview-flex-container p {
+    /* Information text */
+    color: #420D19;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+
+    margin-bottom: -2px;
+}
+
+
+
+
+/* Cat section */
+#section2 {
+    background: linear-gradient(to bottom, #eecbd9, #FAF7F7);
+
+    border-color: #E6D6D9;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+.cats-flex-container {
+    /* Flexbox for cat section */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.cats-info-flex-container {
+    /* Flexbox for each cat: image, name, nickname */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    margin-bottom: 15px;
+
+    max-width: 50%;
+}
+
+.cats-info-flex-container img {
+    /* Images of cat section */
+    max-width: unset;
+    width: 60%;
+
+    margin-bottom: 5px;
+
+    transform: scale(1);
+    transition: transform 0.25s ease;
+}
+
+.cats-info-flex-container img:hover {
+    /* Image size changes when hovering over it */
+    transform: scale(1.05);
+}
+
+.cats-info-flex-container .subtitle {
+    /* Centers cat nickname */
+    text-align: center;
+}
+
+
+
+
+
+/* Travel section */
+.maldives-flex-container {
+    /* Flexbox for text/image and video */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.maldives-flex-container div {
+    /* Sets maximum width for the text/image column */
+    max-width: 55%;
+}
+
+.maldives-flex-container img {
+    /* Centers polaroid image */
+    max-width: unset;
+    width: 70%;
+
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+
+/* Photography section */
+#section4 {
+    background-color: #F8E0EA;
+}
+
+.photography-flex-container {
+    /* Flexbox for photo gallery */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photography-flex-container img {
+    /* Images of photo gallery */
+    object-fit: cover;
+    max-width: unset;
+    width: 280px;
+    height: 400px;
+
+    box-sizing: border-box;
+    border-radius: 5% 5% 0% 0%;
+    box-shadow: 5px 5px 10px #2f020c69;
+
+    filter: saturate(0%);
+    transition: filter 0.25s ease;
+}
+
+.photography-flex-container img:hover {
+    /* Image filter changes when hovering over it */
+    filter: saturate(100%);
+}
+
+.photography-flex-container p {
+    /* Image captions */
+    color: #751B30;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Footer section */
+footer {
+    background-color: #2F020C;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-flex-container {
+    /* Flexbox for footer */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    /* Footer title */
+    color: #F6BAD6;
+    font-family: 'Segoe Script', 'Brush Script MT', 'Snell Roundhand', cursive;
+    font-size: 35px;
+    letter-spacing: -0.01em;
+    text-transform: lowercase;
+
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    /* Footer subtitle */
+    color: #F1D3DF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+
+    padding-bottom: 50px;
+    border-color: #5a303a;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+.footer-subcategories-flex-container {
+    /* Flexbox for subheadings: sections, links and credits */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    
+    margin-top: 35px;
+}
+
+footer div .tag {
+    /* Subheadings */
+    color: #F1D3DF;
+}
+
+.footer-subcategory-style {
+    /* Text and links below subheadings */
+    color: #C49CA9;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    font-style: italic;
+
+    margin-top: 0px;
+    transition: color 0.25s ease;
+}
+
+footer div a:hover {
+    /* Footer link color changes when hovering over it */
+    color: #FAF7F7;
+}
+
+p a {
+    /* Links in a paragraph: "designed by Freepik" */
+    color: #C49CA9;
+    transition: color 0.25s ease;
+}
+
+
+
+
+/* Media query for responsive design */
+@media (max-width: 1024px) {
+
+    ul {
+        padding-left: unset;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    .body-text {
+        font-size: 19px;
+    }
+
+    .intro-flex-container p {
+        font-style: unset;
+        margin-top: 15px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .about-flex-container .body-text{
+        margin-top: 40px;
+    }
+
+    .about-flex-container .note-flex-container {
+        margin-top: 40px;
+    }
+
+    .overview-flex-container {
+        padding-top: 30px;
+        gap: 15px;
+    }
+
+    .cats-flex-container {
+        justify-content: start;
+    }
+
+    .cats-flex-container .note-flex-container {
+        margin-top: 10px;
+    }
+
+    .maldives-flex-container img {
+        padding-bottom: 25px;
+    }
+
+    .maldives-flex-container .body-text {
+        padding-bottom: 25px;
+    }
+
+    .photography-flex-container {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer-subcategories-flex-container {
+        gap: 30px;
+    }
+
+
+
+
+    /* Changes flex-direction */
+    .nav-flex-container {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .nav-menu-links {
+        flex-direction: column;
+
+        margin-bottom: 0px;
+        gap: 7px;
+    }
+
+    .nav-flex-container ul li a {
+        font-size: 20px;
+    }
+
+
+
+
+    /* Unsets maximum width and may apply new width */
+    .about-flex-container div {
+        max-width: unset;
+    }
+
+    .portrait {
+        max-width: unset;
+        width: 80%;
+        margin-bottom: 55px;
+    }
+
+    .maldives-flex-container div {
+        max-width: unset;
+    }
+
+    video {
+        max-width: unset;
+        width: 80%;
+    }
+
+    .cats-info-flex-container {
+        max-width: unset;
+    }
+
+
+
+
+    /* Removes hover, transform and filter effects */
+    .buttonToTop:hover {
+        transform: none;
+    }
+
+    .nav-flex-container ul li a:hover {
+        color: #751B30;
+        background-color: transparent;
+        border-radius: 0px;
+    }
+
+    .cats-info-flex-container img:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .photography-flex-container img {
+        filter: saturate(100%);
+    }
+}
