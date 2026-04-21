@@ -664,6 +664,10 @@ p a {
         justify-content: start;
     }
 
+    .cats-flex-container .subtitle {
+        font-size: 20px;
+    }
+
     .maldives-flex-container img {
         padding-bottom: 25px;
     }
@@ -721,6 +725,10 @@ p a {
     video {
         max-width: unset;
         width: 80%;
+    }
+
+    .cats-info-flex-container {
+        max-width: unset;
     }
 
 
