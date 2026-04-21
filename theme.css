@@ -626,16 +626,8 @@ p a {
         font-size: 65px;
     }
 
-    h2 {
-        font-size: 45px;
-    }
-
     h4 {
         font-size: 40px;
-    }
-
-    footer h2 {
-        font-size: 25px;
     }
 
     .body-text {
@@ -691,8 +683,8 @@ p a {
     /* Changes flex-direction */
     .nav-flex-container {
         flex-direction: column;
-        padding-top: 35px;
-        padding-bottom: 20px;
+        padding-top: 25px;
+        padding-bottom: 10px;
     }
 
     .nav-menu-links {
