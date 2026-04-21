@@ -660,6 +660,10 @@ p a {
         justify-content: start;
     }
 
+    .cats-flex-container .note-flex-container {
+        margin-top: 10px;
+    }
+
     .maldives-flex-container img {
         padding-bottom: 25px;
     }
