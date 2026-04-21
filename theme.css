@@ -27,8 +27,8 @@ video {
     /* Sets maximum width and centers all content */
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .section {
@@ -616,6 +616,10 @@ p a {
 /* Media query for responsive design */
 @media (max-width: 1024px) {
 
+    ul {
+        padding-left: unset;
+    }
+
     h1 {
         font-size: 65px;
     }
@@ -645,24 +649,6 @@ p a {
 
 
 
-    
-    /* (Un-)Sets padding left and right */
-    section {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    footer {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    ul {
-        padding-left: unset;
-    }
-
-
-
 
     /* Changes flex-direction */
     .nav-flex-container {
@@ -672,7 +658,7 @@ p a {
 
     .nav-menu-links {
         flex-direction: column;
-        margin-bottom: 5px;
+        padding-bottom: 5px;
         gap: 7px;
     }
 
