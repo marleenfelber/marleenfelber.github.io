@@ -683,8 +683,8 @@ p a {
     /* Changes flex-direction */
     .nav-flex-container {
         flex-direction: column;
-        padding-top: 25px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .nav-menu-links {
