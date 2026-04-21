@@ -654,11 +654,11 @@ p a {
     .nav-flex-container {
         flex-direction: column;
         padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .nav-menu-links {
         flex-direction: column;
-        padding-bottom: 5px;
         gap: 7px;
     }
 
