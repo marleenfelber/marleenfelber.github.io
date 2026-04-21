@@ -678,12 +678,12 @@ p a {
     }
 
     .footer-subcategories-flex-container {
-        gap: 20px;
+        gap: 30px;
     }
 
 
 
-    
+
     /* Changes flex-direction */
     .nav-flex-container {
         flex-direction: column;
