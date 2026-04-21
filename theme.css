@@ -646,8 +646,12 @@ p a {
 
     .nav-menu-links {
         flex-direction: column;
+        gap: 7px;
     }
 
+    .nav-flex-container ul li a {
+        font-size: 20px;
+    }
 
 
     /* Unsets maximum width and may apply new width */
