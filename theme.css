@@ -639,6 +639,10 @@ p a {
         margin-top: 15px;
     }
 
+    .subtitle {
+        font-size: 22px;
+    }
+
     .about-flex-container .body-text{
         margin-top: 40px;
     }
